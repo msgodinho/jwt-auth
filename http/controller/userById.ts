@@ -1,5 +1,6 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
 import { User } from "../../models/User";
+import { checkToken } from "../../services/checkToken";
 
 interface IParams {
   id: string;

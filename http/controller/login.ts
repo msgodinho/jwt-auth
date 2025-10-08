@@ -27,7 +27,7 @@ export async function login(request: FastifyRequest, reply: FastifyReply) {
 
     return reply.status(200).send({ token });
   } catch (error) {
-    console.error(error); // Log the error for debugging
+    console.error(error);
     return reply.status(500).send({ message: "An internal error occurred." });
   }
 }
